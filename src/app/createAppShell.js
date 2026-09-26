@@ -21,10 +21,13 @@ import {
   LOOK_PRESETS,
 } from "../post/look/cyberpunkLook.js";
 import {
+  phosphorBooks,
+  phosphorCastleTurret,
   phosphorCircleHalf,
   phosphorCloudFog,
   phosphorCloudRain,
   phosphorFilmStrip,
+  phosphorLamp,
   phosphorMoonStars,
   phosphorSunHorizon,
 } from "../ui/core/phosphorIcons.js";
@@ -35,6 +38,21 @@ import {
 } from "../platform/userPreferences.js";
 
 const LOOK_OPTIONS = [
+  {
+    id: "gaslightNight",
+    label: LOOK_PRESETS.gaslightNight.label,
+    icon: phosphorLamp,
+  },
+  {
+    id: "candlelitLibrary",
+    label: LOOK_PRESETS.candlelitLibrary.label,
+    icon: phosphorBooks,
+  },
+  {
+    id: "castleFog",
+    label: LOOK_PRESETS.castleFog.label,
+    icon: phosphorCastleTurret,
+  },
   {
     id: "neutral",
     label: LOOK_PRESETS.neutral.label,

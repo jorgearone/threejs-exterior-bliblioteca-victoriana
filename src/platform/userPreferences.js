@@ -1,5 +1,5 @@
 const DEVELOPMENT_MODE_KEY = "threejs-punk-development-mode";
-const LOOK_PRESET_KEY = "threejs-punk-look-preset";
+const LOOK_PRESET_KEY = "victorian-look-preset";
 
 let developmentModeEnabled = false;
 

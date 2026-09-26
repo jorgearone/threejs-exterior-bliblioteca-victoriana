@@ -92,7 +92,7 @@ function ensureStyles() {
     .app-loader__percent {
       position: absolute;
       margin: 0;
-      font-family: "Orbitron", sans-serif;
+      font-family: "Gloock", serif;
       font-size: 48px;
       font-weight: 500;
       font-variant-numeric: tabular-nums;
@@ -106,7 +106,7 @@ function ensureStyles() {
     .app-loader__status {
       margin: 0;
       min-height: 1em;
-      font-family: "Orbitron", sans-serif;
+      font-family: "Gloock", serif;
       font-size: 0.72rem;
       font-weight: 400;
       letter-spacing: 0.38em;

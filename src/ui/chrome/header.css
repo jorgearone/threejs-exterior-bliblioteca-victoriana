@@ -96,7 +96,7 @@
     box-shadow 0.35s ease;
   pointer-events: all;
   cursor: pointer;
-  font-family: "Orbitron", sans-serif;
+  font-family: "Gloock", serif;
 }
 
 .app-header-about-btn:hover {
@@ -132,7 +132,7 @@
     transform 0.25s ease;
   pointer-events: all;
   cursor: pointer;
-  font-family: "Orbitron", sans-serif;
+  font-family: "Gloock", serif;
 }
 
 .app-header-icon-btn {

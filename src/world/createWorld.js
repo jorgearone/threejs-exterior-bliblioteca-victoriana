@@ -137,11 +137,11 @@ export async function createWorld({
       radius: 135,
       verticalOffset: -33.5,
     });
-    // Scene is night / neon — skip the bright day cloud preset.
+    // Rainy Victorian night — skip the bright day cloud preset.
     sky.updateFromSun({
       night: 1,
-      skyTop: new THREE.Color(0x0a0818),
-      skyBottom: new THREE.Color(0x1c2438),
+      skyTop: new THREE.Color(0x05070e),
+      skyBottom: new THREE.Color(0x1a2233),
     });
   }
 

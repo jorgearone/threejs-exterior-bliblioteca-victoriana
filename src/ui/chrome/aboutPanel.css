@@ -54,16 +54,16 @@
 .about-brand-title {
   color: rgba(255, 255, 255, 0.95);
   font-size: clamp(1.65rem, 6.6vw, 4.2rem);
-  font-family: "Orbitron", sans-serif;
+  font-family: "Gloock", serif;
   font-weight: 700;
   margin: 0;
   letter-spacing: normal;
   line-height: 1;
-  text-shadow: 0 0 40px rgba(168, 85, 247, 0.35);
+  text-shadow: 0 0 40px rgba(139, 94, 52, 0.35);
 }
 
 .about-brand-subtitle {
-  color: rgba(34, 211, 238, 0.75);
+  color: rgba(201, 164, 92, 0.75);
   font-size: clamp(0.6rem, 1.4vw, 0.8rem);
   font-weight: 600;
   letter-spacing: 0.12em;
@@ -88,7 +88,7 @@
 
 .about-lead {
   margin: 0;
-  font-family: "Orbitron", sans-serif;
+  font-family: "Gloock", serif;
   font-weight: 400;
   font-size: clamp(0.85rem, 1.5vw, 1.05rem);
   line-height: 1.7;
@@ -114,7 +114,7 @@
 
 .about-model-credits {
   margin: 0;
-  font-family: "Orbitron", sans-serif;
+  font-family: "Gloock", serif;
   font-size: clamp(0.7rem, 1.2vw, 0.85rem);
   line-height: 1.5;
   letter-spacing: 0.06em;
@@ -125,7 +125,7 @@
 .about-recommended {
   margin: clamp(12px, 2vh, 20px) 0 0;
   max-width: 520px;
-  font-family: "Orbitron", sans-serif;
+  font-family: "Gloock", serif;
   font-size: clamp(0.65rem, 1.1vw, 0.75rem);
   line-height: 1.55;
   letter-spacing: 0.04em;
@@ -139,7 +139,7 @@
   font-weight: 600;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: rgba(34, 211, 238, 0.55);
+  color: rgba(201, 164, 92, 0.55);
 }
 
 .about-recommended[hidden] {
@@ -210,7 +210,7 @@
   font-size: clamp(0.65rem, 1.1vw, 0.75rem);
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  font-family: "Orbitron", sans-serif;
+  font-family: "Gloock", serif;
 }
 
 .refresh-button-panel:hover {

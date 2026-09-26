@@ -18,9 +18,12 @@ import {
 import { edgeChromaticAberration } from "../../tsl/edgeChromaticAberration.js";
 import { film } from "three/addons/tsl/display/FilmNode.js";
 
-export const DEFAULT_LOOK_PRESET = "neonNoir";
+export const DEFAULT_LOOK_PRESET = "gaslightNight";
 
 export const LOOK_PRESET_LABELS = {
+  "Gaslight Night": "gaslightNight",
+  "Candlelit Library": "candlelitLibrary",
+  "Castle Fog": "castleFog",
   Neutral: "neutral",
   "Neon Noir": "neonNoir",
   "Magenta Rain": "magentaRain",
@@ -102,6 +105,99 @@ function presetUniforms({
 }
 
 export const LOOK_PRESETS = {
+  // Victorian night: cool steel-blue shadows, warm gas-lamp highlights.
+  gaslightNight: {
+    label: "Gaslight Night",
+    bloom: { strength: 1.2, radius: 0.6 },
+    bloomWide: { strength: 1.6, radius: 0.9 },
+    lensflare: {
+      strength: 0.05,
+      threshold: 0.95,
+      ghostSpacing: 0.25,
+      ghostAttenuation: 40,
+    },
+    uniforms: presetUniforms({
+      ...fogUniforms([0.2, 0.23, 0.3], {
+        fogEnabled: 1,
+        fogNear: 0,
+        fogFar: 40,
+        fogAmount: 0.8,
+      }),
+      gradeTint: [1.06, 0.97, 0.86],
+      gradeOffset: [-0.004, 0, 0.01],
+      saturationAmount: 0.85,
+      contrast: 1.15,
+      greenSuppress: 0.5,
+      gradeMix: 0.85,
+      chromaticStrength: 0.15,
+      chromaticEdgeFalloff: 4,
+      vignetteIntensity: 0.7,
+      vignetteSmoothness: 0.55,
+      grainIntensity: 0.18,
+    }),
+  },
+  // Warmer, golden variant with a soft candle halo.
+  candlelitLibrary: {
+    label: "Candlelit Library",
+    bloom: { strength: 2, radius: 0.7 },
+    bloomWide: { strength: 2.2, radius: 1 },
+    lensflare: {
+      strength: 0,
+      threshold: 0.9,
+      ghostSpacing: 0.25,
+      ghostAttenuation: 40,
+    },
+    uniforms: presetUniforms({
+      ...fogUniforms([0.28, 0.24, 0.2], {
+        fogEnabled: 1,
+        fogNear: -5,
+        fogFar: 45,
+        fogAmount: 0.7,
+      }),
+      gradeTint: [1.12, 0.98, 0.78],
+      gradeOffset: [0.006, 0.002, -0.004],
+      saturationAmount: 0.95,
+      contrast: 1.1,
+      greenSuppress: 0.4,
+      gradeMix: 0.9,
+      chromaticStrength: 0.1,
+      chromaticEdgeFalloff: 4,
+      vignetteIntensity: 0.85,
+      vignetteSmoothness: 0.5,
+      grainIntensity: 0.2,
+    }),
+  },
+  // Dense grey-blue fog, muted colour, heavy grain.
+  castleFog: {
+    label: "Castle Fog",
+    bloom: { strength: 1, radius: 0.8 },
+    bloomWide: { strength: 0.8, radius: 1 },
+    lensflare: {
+      strength: 0,
+      threshold: 0.9,
+      ghostSpacing: 0.25,
+      ghostAttenuation: 40,
+    },
+    uniforms: presetUniforms({
+      ...fogUniforms([0.3, 0.33, 0.37], {
+        fogEnabled: 1,
+        fogNear: -15,
+        fogFar: 32,
+        fogAmount: 0.95,
+      }),
+      gradeTint: [1, 0.99, 0.96],
+      gradeOffset: [-0.006, -0.002, 0.006],
+      saturationAmount: 0.55,
+      contrast: 1.3,
+      greenSuppress: 0.3,
+      gradeMix: 0.8,
+      chromaticStrength: 0.2,
+      chromaticEdgeFalloff: 6,
+      vignetteIntensity: 0.75,
+      vignetteSmoothness: 0.3,
+      grainIntensity: 0.35,
+    }),
+  },
   neutral: {
     label: "Neutral",
     bloom: { strength: 3, radius: 0.5 },

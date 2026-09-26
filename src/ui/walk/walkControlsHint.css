@@ -45,7 +45,7 @@
   box-shadow: var(--cyber-glow);
   cursor: pointer;
   pointer-events: auto;
-  font-family: "Orbitron", sans-serif;
+  font-family: "Gloock", serif;
   transition:
     opacity 0.25s ease,
     transform 0.25s ease,
@@ -169,7 +169,7 @@
 
 .walk-controls__eyebrow {
   margin: 0 0 4px;
-  font-family: "Orbitron", sans-serif;
+  font-family: "Gloock", serif;
   font-size: 11px;
   font-weight: 600;
   letter-spacing: 0.32em;
@@ -179,7 +179,7 @@
 
 .walk-controls__title {
   margin: 0;
-  font-family: "Orbitron", sans-serif;
+  font-family: "Gloock", serif;
   font-size: clamp(1.6rem, 3vw, 2.2rem);
   font-weight: 700;
   letter-spacing: 0.18em;
@@ -190,7 +190,7 @@
 
 .walk-controls__footer {
   margin: 4px 0 0;
-  font-family: "Orbitron", sans-serif;
+  font-family: "Gloock", serif;
   font-size: 11px;
   font-weight: 500;
   letter-spacing: 0.22em;
@@ -220,7 +220,7 @@
 
 .walk-controls__diagram .walk-key-label {
   fill: rgba(255, 255, 255, 0.62);
-  font-family: "Orbitron", sans-serif;
+  font-family: "Gloock", serif;
   font-size: 15px;
   font-weight: 700;
   letter-spacing: 0.04em;
@@ -255,7 +255,7 @@
 
 .walk-controls__diagram .walk-callout-title {
   fill: rgba(255, 255, 255, 0.96);
-  font-family: "Orbitron", sans-serif;
+  font-family: "Gloock", serif;
   font-size: 16px;
   font-weight: 700;
   letter-spacing: 0.12em;
@@ -265,7 +265,7 @@
 
 .walk-controls__diagram .walk-callout-copy {
   fill: rgba(255, 255, 255, 0.52);
-  font-family: "Orbitron", sans-serif;
+  font-family: "Gloock", serif;
   font-size: 11px;
   font-weight: 400;
   letter-spacing: 0.06em;

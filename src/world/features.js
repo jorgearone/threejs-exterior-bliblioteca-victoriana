@@ -19,7 +19,8 @@ export const FEATURES = {
   car: true,
   rain: true,
   smoke: true,
-  planes: true,
+  // Off for the Victorian look; to be replaced by owls/brooms on the same path.
+  planes: false,
   sky: true,
   ground: true,
   intro: true,

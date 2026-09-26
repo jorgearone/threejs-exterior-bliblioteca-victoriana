@@ -21,7 +21,7 @@
 
 .intro-kicker {
   margin: 0 0 0.85rem;
-  font-family: "Orbitron", sans-serif;
+  font-family: "Gloock", serif;
   font-weight: 400;
   font-size: clamp(0.65rem, 1.4vw, 0.8rem);
   letter-spacing: 0.42em;
@@ -43,7 +43,7 @@
 .intro-brand-line {
   display: inline-flex;
   justify-content: center;
-  font-family: "Orbitron", sans-serif;
+  font-family: "Gloock", serif;
   font-weight: 600;
   font-size: clamp(2.6rem, 11vw, 5.75rem);
   letter-spacing: -0.04em;
@@ -82,7 +82,7 @@
 .intro-container .intro-tagline {
   margin: 0 0 1.75rem;
   max-width: 22rem;
-  font-family: "Orbitron", sans-serif;
+  font-family: "Gloock", serif;
   font-weight: 400;
   font-size: clamp(1.05rem, 2.4vw, 1.35rem);
   line-height: 1.35;
@@ -109,7 +109,7 @@
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   color: #ffffff;
-  font-family: "Orbitron", sans-serif;
+  font-family: "Gloock", serif;
   font-weight: 500;
   font-size: clamp(0.8rem, 1.4vw, 0.95rem);
   letter-spacing: 0.28em;
@@ -141,7 +141,7 @@
 
 .intro-credit {
   margin: 1.35rem 0 0;
-  font-family: "Orbitron", sans-serif;
+  font-family: "Gloock", serif;
   font-weight: 400;
   font-size: clamp(0.58rem, 1.1vw, 0.68rem);
   letter-spacing: 0.22em;

@@ -16,12 +16,13 @@ export function addModel(scene, model) {
 
 export function createScene() {
   const scene = new THREE.Scene();
-  scene.background = new THREE.Color(0x080610);
+  scene.background = new THREE.Color(0x06080d);
 
   const SHADOW_EXTENT = 200;
   const SUN_DISTANCE = 150;
 
-  const sunLight = new THREE.DirectionalLight("#cfefff", 10);
+  // Moonlight key: cool and dim so warm lamp light reads as the accent.
+  const sunLight = new THREE.DirectionalLight("#9fb4d8", 2.5);
   sunLight.position.set(23, 31, 3);
   sunLight.target.position.set(0, 0, 0);
   sunLight.castShadow = true;
@@ -40,7 +41,8 @@ export function createScene() {
   scene.add(sunLight);
   scene.add(sunLight.target);
 
-  const fillLight = new THREE.DirectionalLight("#ffd6c8", 1.5);
+  // Warm bounce from gas lamps.
+  const fillLight = new THREE.DirectionalLight("#ffb070", 1.2);
   fillLight.position.set(-18, 22, -12);
   fillLight.target.position.set(0, 0, 0);
   fillLight.castShadow = false;

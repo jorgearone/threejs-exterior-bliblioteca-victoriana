@@ -122,12 +122,12 @@
 
 .settings-section-title {
   margin: 0;
-  font-family: "Orbitron", sans-serif;
+  font-family: "Gloock", serif;
   font-size: 0.68rem;
   font-weight: 600;
   letter-spacing: 0.22em;
   text-transform: uppercase;
-  color: rgba(34, 211, 238, 0.78);
+  color: rgba(201, 164, 92, 0.78);
 }
 
 .settings-look-grid {
@@ -171,8 +171,8 @@
 }
 
 .settings-look-btn--active {
-  background: rgba(168, 85, 247, 0.16);
-  border-color: rgba(34, 211, 238, 0.55);
+  background: rgba(139, 94, 52, 0.16);
+  border-color: rgba(201, 164, 92, 0.55);
   box-shadow: var(--cyber-glow-hover);
   color: rgba(255, 255, 255, 0.96);
 }
@@ -183,7 +183,7 @@
   justify-content: center;
   width: 28px;
   height: 28px;
-  color: rgba(34, 211, 238, 0.9);
+  color: rgba(201, 164, 92, 0.9);
 }
 
 .settings-look-btn--active .settings-look-icon {
@@ -195,7 +195,7 @@
 }
 
 .settings-look-label {
-  font-family: "Orbitron", sans-serif;
+  font-family: "Gloock", serif;
   font-size: 0.72rem;
   font-weight: 600;
   letter-spacing: 0.1em;
@@ -226,7 +226,7 @@
 }
 
 .settings-option-title {
-  font-family: "Orbitron", sans-serif;
+  font-family: "Gloock", serif;
   font-size: 0.92rem;
   font-weight: 500;
   color: rgba(255, 255, 255, 0.92);
@@ -275,13 +275,13 @@
     0 calc(100% - 3px)
   );
   background: rgba(255, 255, 255, 0.88);
-  box-shadow: 0 0 8px rgba(34, 211, 238, 0.15);
+  box-shadow: 0 0 8px rgba(201, 164, 92, 0.15);
   transition: transform 0.25s cubic-bezier(0.22, 1, 0.36, 1);
 }
 
 .settings-toggle-input:checked + .settings-toggle {
-  background: rgba(168, 85, 247, 0.28);
-  border-color: rgba(34, 211, 238, 0.45);
+  background: rgba(139, 94, 52, 0.28);
+  border-color: rgba(201, 164, 92, 0.45);
 }
 
 .settings-toggle-input:checked + .settings-toggle::after {
@@ -306,7 +306,7 @@
   justify-content: center;
   gap: 10px;
   padding: 14px 20px;
-  font-family: "Orbitron", sans-serif;
+  font-family: "Gloock", serif;
   font-size: 10px;
   font-weight: 600;
   letter-spacing: 0.14em;
@@ -341,7 +341,7 @@
 
 .settings-restart-hint {
   margin: 10px 0 0;
-  font-family: "Orbitron", sans-serif;
+  font-family: "Gloock", serif;
   font-size: 0.72rem;
   font-weight: 400;
   color: rgba(255, 255, 255, 0.38);

@@ -36,13 +36,13 @@ const CLOUD_EVENING = {
 
 const CLOUD_NIGHT = {
   windDirection: new THREE.Vector2(0.35, -0.15),
-  cloudDensity: 0.64,
+  cloudDensity: 0.8,
   noiseScale: 10.5,
   distortionStrength: 1.6,
   contrast: 1.3,
-  opacity: 0.36,
-  cloudDarkColor: new THREE.Color("#d8d0e8"),
-  cloudLightColor: new THREE.Color("#595a7d"),
+  opacity: 0.6,
+  cloudDarkColor: new THREE.Color("#2b3244"),
+  cloudLightColor: new THREE.Color("#7d8aa6"),
   lightMultiplier: new THREE.Vector3(0.58, 0.58, 0.82),
   densityStrength: 0.56,
   speed: 1.8,
