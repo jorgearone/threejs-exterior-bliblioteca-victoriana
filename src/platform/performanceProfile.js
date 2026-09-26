@@ -48,6 +48,9 @@ export const performanceProfile = {
 
   billboardsEnabled: true,
 
+  // Point lights that follow the gas lamps nearest the camera (constant count).
+  gasLampLightCount: 6,
+
   collisionRainResolution: 512,
   collisionRainFrameSkip: 1,
   collisionRainCount: 5000,
@@ -71,6 +74,7 @@ export function applyDevicePerformanceDefaults() {
   performanceProfile.lensflare = false;
   performanceProfile.billboardsEnabled = false;
   performanceProfile.ao = false;
+  performanceProfile.gasLampLightCount = 2;
 
   if (isAppleMobile() || isSafari()) {
     performanceProfile.maxPixelRatio = 1.25;

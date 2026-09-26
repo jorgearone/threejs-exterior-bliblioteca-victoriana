@@ -5,6 +5,7 @@ import { applyBillboardMaterials } from "./billboards/applyBillboardMaterials.js
 import { loadQuadraCar } from "./car/loadCar.js";
 import { loadEnvironmentMap } from "./envMap.js";
 import { createGround } from "./ground/createGround.js";
+import { createGasLamps } from "./props/createGasLamps.js";
 import { createCollisionHeight } from "./weather/createCollisionHeight.js";
 import { createCollisionRain } from "./weather/createCollisionRain.js";
 import { createSmoke } from "./effects/createSmoke.js";
@@ -14,7 +15,7 @@ import { FEATURES } from "./features.js";
 import { performanceProfile } from "../platform/performanceProfile.js";
 import * as THREE from "three/webgpu";
 
-function buildColliders({ city, boundsCollider, carCollider }) {
+function buildColliders({ city, boundsCollider, carCollider, gasLamps }) {
   const colliders = [];
 
   if (city) {
@@ -27,6 +28,10 @@ function buildColliders({ city, boundsCollider, carCollider }) {
 
   if (carCollider) {
     colliders.push(carCollider);
+  }
+
+  if (gasLamps?.collider) {
+    colliders.push(gasLamps.collider);
   }
 
   return colliders;
@@ -120,6 +125,10 @@ export async function createWorld({
   }
 
   const ground = FEATURES.ground ? createGround(scene) : null;
+  const gasLamps = FEATURES.gasLamps ? createGasLamps(scene) : null;
+  if (gasLamps) {
+    requestShadowMapUpdate?.("gas-lamps");
+  }
 
   let smoke = null;
   if (FEATURES.smoke && quadraCar) {
@@ -161,6 +170,7 @@ export async function createWorld({
     city,
     boundsCollider,
     carCollider: quadraCollider,
+    gasLamps,
   });
   const focusTargets = buildFocusTargets({
     city,
@@ -178,6 +188,7 @@ export async function createWorld({
     carSurfaceRain,
     envTexture,
     ground,
+    gasLamps,
     collisionHeight,
     rain,
     smoke,

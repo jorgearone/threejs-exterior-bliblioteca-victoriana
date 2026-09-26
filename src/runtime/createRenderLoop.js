@@ -36,6 +36,7 @@ export function createRenderLoop({
 
     world.sky?.update(camera, timer.getElapsed());
     world.ground?.update?.(delta);
+    world.gasLamps?.update(delta, camera);
     const rainEnabled = world.rain?.params?.enabled ?? false;
     world.ground?.setRippleAmount?.(rainEnabled ? 1 : 0);
 

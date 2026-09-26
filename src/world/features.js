@@ -23,6 +23,7 @@ export const FEATURES = {
   planes: false,
   sky: true,
   ground: true,
+  gasLamps: true,
   intro: true,
   chromeUi: true,
   walkUi: true,
